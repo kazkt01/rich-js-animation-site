@@ -35,6 +35,14 @@ body {
   left: 40px;
 }
 
+.logo-txt {
+  position: fixed;
+  top: 10px;
+  left: 40px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .header-nav {
   margin: 30px;
   display: flex;
@@ -80,4 +88,42 @@ body {
   height: auto;
   z-index: -100;
   background-size: cover;
+}
+
+.headline {
+  font-size: 100px;
+  margin: 0;
+  height: 110px;
+}
+
+.second {
+  font-size: 80px;
+  margin: 0;
+  width: 100%;
+}
+
+.btn-box {
+  position: fixed;
+  top: 45px;
+  right: 40px;
+}
+
+.btn {
+  background: #b937ff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: white;
+  opacity: 0.8;
+  transition: all 0.4s;
+  border: 1px solid #909090;
+}
+.btn:hover {
+  background: white;
+  color: #333;
+  opacity: 1;
+  box-shadow: none;
+  border: none;
 }/*# sourceMappingURL=Home.css.map */

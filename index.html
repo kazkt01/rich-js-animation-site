@@ -17,7 +17,8 @@
   <body>
     <div class="w-lapper">
       <div class="logo-box">
-        <img class="logo" src="./assets/logo02.png" alt="" />
+        <p class="logo-txt">Sample</p>
+        <!-- <img class="logo" src="./assets/logo02.png" alt="" /> -->
       </div>
       <header class="header-box">
         <!-- 中央寄せのmenunにしよう -->
@@ -34,9 +35,15 @@
         </nav>
       </header>
 
+      <div class="btn-box">
+        <a class="btn-link" href="">
+          <button class="btn">Contact</button>
+        </a>
+      </div>
+
       <div class="test">
         <h1 class="headline">404</h1>
-        <h2 class="second">samplesample</h2>
+        <h2 class="second">This is Sample</h2>
         <p class="third">samplesamplesamplesample</p>
       </div>
       <video autoplay loop muted class="test-video">
@@ -46,7 +53,7 @@
         />
       </video>
       <section class="section-box">
-        <h1 class="section-title">Hi We are Sample Tech Company</h1>
+        <h1 class="section-title">sample Company</h1>
       </section>
       <section class="section-box">
         <h1 class="section-title">Hi We are Sample Tech Company</h1>
@@ -62,24 +69,49 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ reset: true });
-      ScrollReveal().reveal(".headline", {
+
+      ScrollReveal().reveal(".logo-txt", {
         delay: 500,
         // origin: "left",
         distance: "50px",
-        scale: 200, //←これ面白い
+        origin: "left",
+        reset: false,
+      });
+
+      ScrollReveal().reveal(".header-nav", {
+        delay: 100,
+        // origin: "left",
+        distance: "50px",
+        origin: "top",
+        reset: false,
+      });
+
+      ScrollReveal().reveal(".btn-box", {
+        delay: 500,
+        origin: "right",
+        distance: "50px",
+        reset: false,
+      });
+
+      ScrollReveal().reveal(".headline", {
+        delay: 200,
+        // origin: "left",
+        distance: "50px",
+        // scale: 200, //←これ面白い
+        // reset: false,
       });
       ScrollReveal().reveal(".second", {
-        delay: 1500,
+        delay: 500,
         // origin: "left",
         distance: "50px",
       });
       ScrollReveal().reveal(".third", {
-        delay: 1800,
+        delay: 100,
         origin: "left",
         distance: "100px",
       });
       ScrollReveal().reveal(".section-box", {
-        delay: 1000,
+        delay: 600,
         distance: "50px",
       });
     </script>
