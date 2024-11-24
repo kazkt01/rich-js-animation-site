@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Kameron:wght@400..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/Home.css" />
+  </head>
+  <body>
+    <div class="w-lapper">
+      <div class="logo-box">
+        <img class="logo" src="./assets/logo02.png" alt="" />
+      </div>
+      <header class="header-box">
+        <!-- 中央寄せのmenunにしよう -->
+
+        <nav class="header-nav">
+          <li class="header-li"><a class="header-link" href="">About</a></li>
+          <li class="header-li">
+            <a class="header-link" href="">Business</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" href="">Mission</a>
+          </li>
+          <li class="header-li"><a class="header-link" href="">Join</a></li>
+        </nav>
+      </header>
+
+      <div class="test">
+        <h1 class="headline">404</h1>
+        <h2 class="second">samplesample</h2>
+        <p class="third">samplesamplesamplesample</p>
+      </div>
+      <video autoplay loop muted class="test-video">
+        <source
+          src="./assets/18069232-uhd_3840_2160_24fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <section class="section-box">
+        <h1 class="section-title">Hi We are Sample Tech Company</h1>
+      </section>
+      <section class="section-box">
+        <h1 class="section-title">Hi We are Sample Tech Company</h1>
+      </section>
+      <section class="section-box">
+        <h1 class="section-title">Hi We are Sample Tech Company</h1>
+      </section>
+      <section class="section-box">
+        <h1 class="section-title">Hi We are Sample Tech Company</h1>
+      </section>
+    </div>
+    <!-- l-wrapper END -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+      ScrollReveal().reveal(".headline", {
+        delay: 500,
+        // origin: "left",
+        distance: "50px",
+        scale: 200, //←これ面白い
+      });
+      ScrollReveal().reveal(".second", {
+        delay: 1500,
+        // origin: "left",
+        distance: "50px",
+      });
+      ScrollReveal().reveal(".third", {
+        delay: 1800,
+        origin: "left",
+        distance: "100px",
+      });
+      ScrollReveal().reveal(".section-box", {
+        delay: 1000,
+        distance: "50px",
+      });
+    </script>
+  </body>
+</html>
